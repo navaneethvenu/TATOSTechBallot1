@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    padding: 10px;
+}
+
+.postcontainer
+{
+    width: 85vh;
+    height: 85vh;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: #B1D7FD;
+
+}
+
+.itemcontainer
+{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+}
+
+.item
+{
+    margin: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 0%;
+    display: inline;
+    max-height: 100%;
+}
+
+.item img:hover
+{
+    width: 35vw;
+    min-width: 200px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.item img
+{
+    width: 30vw;
+    min-width: 200px;
+    max-width: 400px;
+    transition-duration: 0.5s;
+    
+}
+
+.reactioncontainer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    padding: 30px;
+    width: 100%;
+}
+
+.reaction
+{
+    margin: 20px;
+    border-radius: 30px;
+    padding: 0%;
+    display: inline;
+    max-height: 100%;
+}
+
+.reaction img
+{
+    width: 5vw;
+    min-width: 20px;
+    max-width: 100px;
+    transition-duration: 0.5s;
+    
+}
+
+
+.bottombar img
+{
+    width: 100%;
+}
+.bottombar
+{
+    padding: 10px;
+}
+
+.postcontainer h1
+{
+    font-size: 65px;
+    text-align: center;
+}
