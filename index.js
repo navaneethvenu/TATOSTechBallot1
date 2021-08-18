@@ -70,3 +70,10 @@ function setBar(type, status) {
 
     document.getElementsByClassName(type)[status - 1].style.display = "block";
 }
+
+function changeColour() {
+
+    var r = document.querySelector(':root');
+    var hex = document.getElementById("hexCode").value;
+    r.style.setProperty('--background', hex);
+}

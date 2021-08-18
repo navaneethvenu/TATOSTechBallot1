@@ -263,3 +263,14 @@ button
     flex-direction: column;
     margin: 30px;
 }
+
+.container
+{
+    display: none;
+}
+
+@media only screen and (width: 1920px) {
+  .container {
+    display: flex;
+  }
+}
