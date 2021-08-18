@@ -4,7 +4,7 @@
     padding: 0;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .container
@@ -18,13 +18,13 @@
     padding: 10px;
 }
 
-.postcontainer
+.linkedinpostcontainer
 {
-    width: 85vh;
-    height: 85vh;
+    width: 1000px;
+    height: 1000px;
     min-width: 100px;
     min-height: 100px;
-    display: flex;
+    display: none;
     padding: 10px;
     flex-direction: column;
     justify-content: flex-end;
@@ -34,10 +34,52 @@
 
 }
 
-.itemcontainer
+.twitterpostcontainer
+{
+    width: 1500px;
+    height: 788.5px;
+    min-width: 100px;
+    min-height: 100px;
+    display: none;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: #B1D7FD;
+
+}
+
+.instapostcontainer
+{
+    width: 562.5px;
+    height: 1000px;
+    min-width: 100px;
+    min-height: 100px;
+    display: none;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: #B1D7FD;
+
+}
+
+.linkedinpostcontainer .itemcontainer
 {
     display: flex;
     margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+}
+
+.twitterpostcontainer .itemcontainer
+{
+    display: flex;
+    margin-top: -5px;
     justify-content: space-around;
     align-items: center;
     height: 400px;
@@ -56,7 +98,7 @@
 
 .item img:hover
 {
-    width: 35vw;
+    width: 700px;
     min-width: 200px;
     max-width: 450px;
     transition-duration: 0.5s;
@@ -64,7 +106,7 @@
 
 .item img
 {
-    width: 30vw;
+    width: 600px;
     min-width: 200px;
     max-width: 400px;
     transition-duration: 0.5s;
@@ -109,8 +151,101 @@
     padding: 10px;
 }
 
-.postcontainer h1
+.linkedinpostcontainer h1
 {
     font-size: 65px;
     text-align: center;
+}
+
+.twitterpostcontainer h1
+{
+    font-size: 65px;
+    text-align: center;
+}
+
+.instapostcontainer h1
+{
+    font-size: 45px;
+    text-align: center;
+}
+
+
+.instapostcontainer .item
+{
+    margin: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 0%;
+    display: inline;
+    max-height: 100%;
+}
+
+.instapostcontainer .item img:hover
+{
+    width: 300px;
+    min-width: 200px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.instapostcontainer .item img
+{
+    width: 250px;
+    min-width: 200px;
+    max-width: 400px;
+    transition-duration: 0.5s;
+    
+}
+
+.instapostcontainer .itemcontainer1
+{
+    display: flex;
+    margin-top: -5px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    padding: 30px;
+}
+
+.instapostcontainer .itemcontainer1 .item img:hover
+{
+    width: 270px;
+    min-width: 200px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.instapostcontainer .itemcontainer1 .item img
+{
+    width: 220px;
+    min-width: 200px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.instapostcontainer .itemcontainer2
+{
+    display: flex;
+    margin-top: -5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+}
+
+button
+{
+    padding: 30px;
+    font-size: large;
+    margin: 10px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.buttoncontainer
+{
+    display: flex;
+    flex-direction: column;
 }
