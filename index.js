@@ -71,9 +71,24 @@ function setBar(type, status) {
     document.getElementsByClassName(type)[status - 1].style.display = "block";
 }
 
-function changeColour() {
+function changeColour(e) {
 
+    const CODE_PATTERN = /[a-fA-F0-9]{6}/;
+    const CODE_PATTERN2 = /(2[a-fA-F0-9]{6})/;
+
+    e.preventDefault();
     var r = document.querySelector(':root');
     var hex = document.getElementById("hexCode").value;
-    r.style.setProperty('--background', hex);
+    if (CODE_PATTERN.test(hex) || CODE_PATTERN2.test(hex))
+        if (hex[0] != '#')
+            r.style.setProperty('--background', "#" + hex);
+        else
+            r.style.setProperty('--background', hex);
+}
+
+function changeImage(e, name) {
+    e.preventDefault();
+    for (i = 0; i < 4; ++i) {
+        document.getElementsByClassName(name)[i].src = URL.createObjectURL(e.target.files[0]);
+    }
 }
