@@ -95,7 +95,7 @@ function changeColour(e) {
 
 function changeImage(e, name) {
     e.preventDefault();
-    for (i = 0; i < 4; ++i) {
+    for (i = 0; i < 5; ++i) {
         document.getElementsByClassName(name)[i].src = URL.createObjectURL(e.target.files[0]);
     }
 }
