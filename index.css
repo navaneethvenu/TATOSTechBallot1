@@ -296,13 +296,13 @@ button
     margin: 30px;
 }
 
-.container
+/* .container
 {
     display: none;
-}
+} */
 
-@media only screen and (width: 1920px) {
+/* @media only screen and (width: 1920px) {
   .container {
     display: flex;
   }
-}
+} */
