@@ -25,8 +25,8 @@
 
 .linkedinpostcontainer
 {
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: 500px;
     min-width: 100px;
     min-height: 100px;
     display: none;
@@ -36,13 +36,14 @@
     justify-content: space-between;
     align-items: center;
     background:var(--background);
+    overflow: hidden;
 
 }
 
 .fbpostcontainer
 {
-    width: 1000px;
-    height: 1000px;
+    width: 1072px;
+    height: 603px;
     min-width: 100px;
     min-height: 100px;
     display: none;
@@ -90,17 +91,69 @@
 .linkedinpostcontainer .itemcontainer
 {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     justify-content: space-around;
     align-items: center;
-    height: 400px;
-    padding: 30px;
+    /* height: 200px; */
+    padding: 0px;
+    overflow: hidden;
+}
+
+.linkedinpostcontainer .middlecont
+{
+    
+    overflow: hidden;
+}
+
+.fbpostcontainer .middlecont
+{
+    
+    overflow: hidden;
+}
+
+.linkedinpostcontainer .item
+{
+    overflow: hidden;
+}
+
+.linkedinpostcontainer .item img:hover
+{
+    width: 250px;
+    min-width: 250px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.linkedinpostcontainer .item img
+{
+    width: 200px;
+    min-width: 200px;
+    max-width: 400px;
+    transition-duration: 0.5s;
+    
+}
+
+.fbpostcontainer .item img:hover
+{
+    width: 250px;
+    min-width: 250px;
+    max-width: 450px;
+    transition-duration: 0.5s;
+}
+
+.fbpostcontainer .item img
+{
+    width: 200px;
+    min-width: 200px;
+    max-width: 400px;
+    transition-duration: 0.5s;
+    
 }
 
 .fbpostcontainer .itemcontainer
 {
     display: flex;
-    margin-top: 20px;
+    margin-top: -80px;
     justify-content: space-around;
     align-items: center;
     height: 400px;
@@ -127,6 +180,28 @@
     max-height: 100%;
 }
 
+.linkedinpostcontainer .item
+{
+    margin: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.048);
+    border-radius: 30px;
+    padding: 0%;
+    display: inline;
+    max-height: 100%;
+}
+
+
+.fbpostcontainer .item
+{
+    margin: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.048);
+    border-radius: 30px;
+    padding: 0%;
+    display: inline;
+    max-height: 100%;
+}
+
+
 .item img:hover
 {
     width: 700px;
@@ -144,15 +219,40 @@
     
 }
 
-.reactioncontainer
+
+
+.instapostcontainer .reactioncontainer
 {
     display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    padding: 0px;
+    width: 50%;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+    /* margin-left: 340px;
+    margin-right: 340px; */
+    /* background-color: #333333; */
+}
+
+.fbpostcontainer .reactioncontainer
+{
+    display: flex;
+    overflow: hidden;
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    padding: 30px;
-    width: 100%;
+    padding: 0px;
+    width: 50%;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+    /* margin-left: 340px;
+    margin-right: 340px; */
+    /* background-color: #333333; */
 }
+
 
 .reaction
 {
@@ -160,12 +260,13 @@
     border-radius: 30px;
     padding: 0%;
     display: inline;
-    max-height: 100%;
+    max-height: 80%;
+    overflow: hidden;
 }
 
 .reaction img
 {
-    width: 5vw;
+    width: 3vw;
     min-width: 20px;
     max-width: 100px;
     transition-duration: 0.5s;
@@ -190,9 +291,34 @@
     margin-bottom: 0px;
 }
 
+.linkedinpostcontainer .bottombar
+{
+    width: 95%;
+    margin-bottom: -40px;
+    overflow: hidden;
+}
+
+.fbpostcontainer .bottombar
+{
+    width: 95%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.fbpostcontainer .bottombar img
+{
+    margin-bottom: 10px;
+}
+
+.linkedinpostcontainer .bottombar img
+{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 .linkedinpostcontainer h1
 {
-    font-size: 65px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -241,6 +367,9 @@
     transition-duration: 0.5s;
     
 }
+
+
+
 
 .instapostcontainer .itemcontainer1
 {
